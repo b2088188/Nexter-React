@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components/macro';
+import Features from 'components/Features';
 
 const App = () => {
    return (
@@ -8,16 +9,9 @@ const App = () => {
             display: grid;
             grid-template:
                80vh min-content 40vw repeat(3, min-content)
-               / [sidebar-start] 8rem [sidebar-end full-start] minmax(
-                  6rem,
-                  1fr
-               ) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end])
+               / [sidebar-start] 8rem [sidebar-end full-start] minmax(6rem, 1fr)
+               [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end])
                [center-end] minmax(6rem, 1fr) [full-end];
-
-            & > * {
-               padding: 40px;
-               font-size: 3rem;
-            }
          `}
       >
          <div
@@ -45,14 +39,7 @@ const App = () => {
          >
             Top 3 realtors
          </div>
-         <section
-            css={`
-               background: var(--color-grey-light-2);
-               grid-column: center-start / center-end;
-            `}
-         >
-            Features
-         </section>
+         <Features />
          <div
             css={`
                background: var(--color-primary);
