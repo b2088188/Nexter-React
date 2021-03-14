@@ -11,6 +11,11 @@ const StoryPictures = () => {
 				grid-template: repeat(6, 1fr) / repeat(6, 1fr);
 				align-items: center;
 				background-image: url(/images/back.jpg);
+				// background-image: linear-gradient(
+				// 		rgba(var(--color-primary), 0.5),
+				// 		rgba(var(--color-primary), 0.5)
+				// 	),
+				// 	url(/images/back.jpg);
 			`}
 		>
 			<img

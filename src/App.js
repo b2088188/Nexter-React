@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components/macro';
 import Features from 'components/Features';
 import Story from 'components/story/Story';
+import Homes from 'components/Homes';
 
 const App = () => {
    return (
@@ -42,14 +43,7 @@ const App = () => {
          </div>
          <Features />
          <Story />
-         <section
-            css={`
-               background: var(--color-secondary);
-               grid-column: center-start/center-end;
-            `}
-         >
-            Homes
-         </section>
+         <Homes />
          <section
             css={`
                background: var(--color-grey-dark-1);
