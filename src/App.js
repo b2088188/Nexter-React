@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components/macro';
 import Features from 'components/Features';
+import Story from 'components/story/Story';
 
 const App = () => {
    return (
@@ -40,22 +41,7 @@ const App = () => {
             Top 3 realtors
          </div>
          <Features />
-         <div
-            css={`
-               background: var(--color-primary);
-               grid-column: full-start/col-end 4;
-            `}
-         >
-            Story pictures
-         </div>
-         <div
-            css={`
-               background: var(--color-grey-light-1);
-               grid-column: col-start 5 / full-end;
-            `}
-         >
-            Story content
-         </div>
+         <Story />
          <section
             css={`
                background: var(--color-secondary);
