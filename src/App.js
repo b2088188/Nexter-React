@@ -7,6 +7,7 @@ import Gallery from 'components/Gallery';
 import Footer from 'components/Footer';
 import Sidebar from 'components/Sidebar';
 import Header from 'components/Header';
+import Realtors from 'components/Realtors';
 
 const App = () => {
    return (
@@ -22,14 +23,7 @@ const App = () => {
       >
          <Sidebar />
          <Header />
-         <div
-            css={`
-               background: var(--color-secondary);
-               grid-column: col-start 7 / full-end;
-            `}
-         >
-            Top 3 realtors
-         </div>
+         <Realtors />
          <Features />
          <Story />
          <Homes />

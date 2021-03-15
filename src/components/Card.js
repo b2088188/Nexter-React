@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components/macro';
+import Button from 'components/Button';
 
 const Card = ({ imageSrc, title, country, rooms, area, price }) => {
 	return (
@@ -9,6 +10,9 @@ const Card = ({ imageSrc, title, country, rooms, area, price }) => {
 				display: grid;
 				grid-template-columns: repeat(2, 1fr);
 				grid-gap: 3.5rem 0;
+				& button {
+					grid-column: 1/-1;
+				}
 			`}
 		>
 			<img
@@ -139,13 +143,7 @@ const Card = ({ imageSrc, title, country, rooms, area, price }) => {
 				</svg>
 				<p>${price}</p>
 			</div>
-			<button
-				css={`
-					grid-column: 1/-1;
-				`}
-			>
-				Contact realtor
-			</button>
+			<Button>Contact realtor</Button>
 		</div>
 	);
 };

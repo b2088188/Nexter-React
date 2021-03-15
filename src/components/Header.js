@@ -31,11 +31,23 @@ const Header = () => {
 				src='/images/logo.png'
 				alt='Nexter logo'
 			/>
-			<h3>Your own home:</h3>
+			<h3
+				css={`
+					color: var(--color-primary);
+					font-size: 1.6rem;
+					text-transform: uppercase;
+					font-family: var(--font-display);
+					font-weight: 400;
+				`}
+			>
+				Your own home:
+			</h3>
 			<h1
 				css={`
 					font-size: 4.5rem;
 					color: var(--color-grey-light-1);
+					font-family: var(--font-display);
+					font-weight: 400;
 					line-height: 1;
 				`}
 			>
