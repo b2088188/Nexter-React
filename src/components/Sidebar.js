@@ -10,6 +10,12 @@ const Sidebar = () => {
 				grid-row: 1/-1;
 				display: flex;
 				justify-content: center;
+				@media only screen and (max-width: 62.5em) {
+					grid-row: 1/2;
+					grid-column: 1/-1;
+					justify-content: flex-end;
+					align-items: center;
+				}
 			`}
 		>
 			<button
@@ -33,6 +39,15 @@ const Sidebar = () => {
 					}
 					&:after {
 						transform: translateY(1.3rem);
+					}
+					@media only screen and (max-width: 62.5em) {
+						margin: 0 3rem 0;
+						&:before {
+							transform: translateY(-1.2rem);
+						}
+						&:after {
+							transform: translateY(1rem);
+						}
 					}
 				`}
 			></button>

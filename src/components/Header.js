@@ -13,13 +13,22 @@ const Header = () => {
 				background-size: cover;
 				background-position: center;
 				display: grid;
-				grid-template: 1fr min-content 6rem 1fr / max-content;
+				grid-template: 1fr min-content minmax(min-content, 6rem) 1fr / minmax(
+						min-content,
+						max-content
+					);
 				grid-gap: 1.5rem 0;
 				padding: 4rem 8rem 8rem;
 
 				& button {
 					align-self: start;
 					justify-self: start;
+				}
+				@media only screen and (max-width: 50em) {
+					grid-column: full-start/full-end;
+				}
+				@media only screen and (max-width: 37.5em) {
+					padding: 5rem;
 				}
 			`}
 		>
@@ -83,8 +92,10 @@ const Header = () => {
 					grid-template: auto/repeat(4, 1fr);
 					grid-gap: 3rem;
 					justify-items: center;
+					align-items: center;
 					& > * {
-						height: 2.5rem;
+						max-height: 2.5rem;
+						max-width: 100%;
 						filter: brightness(0.7);
 					}
 				`}

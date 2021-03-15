@@ -1,10 +1,6 @@
 import { createGlobalStyle } from 'styled-components';
 
 const GlobalStyle = createGlobalStyle`
-html{
-	box-sizing:border-box;
-	font-size:62.5%;
-}
 	:root{
 --color-primary: #c69963;
 --color-primary-dark: #B28451;
@@ -15,7 +11,18 @@ html{
 --color-grey-dark-2: #6D5D4B;
 --font-primary: 'Nunito', sans-serif;
 --font-display: 'Josefin Sans', sans-serif;
+--bp-largest:75em; // 1200px
+--bp-large:62.5em; // 1000px
 	}
+html{
+	box-sizing:border-box;
+	font-size:62.5%;
+
+}
+@media only screen and (max-width:75em){
+	html{font-size:50%;}
+}
+
 	body{
 		font-family: var(--font-primary);
 		color:var(--color-grey-dark-2);
@@ -29,6 +36,8 @@ html{
 		padding:0;
 		box-sizing:inherit;
 	}
+
+	
 `;
 
 export default GlobalStyle;

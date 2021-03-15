@@ -13,6 +13,10 @@ const StoryContent = () => {
 				flex-direction: column;
 				justify-content: center;
 				align-items: flex-start;
+				@media only screen and (max-width: 50em) {
+					grid-row: 5/6;
+					grid-column: 1/-1;
+				}
 			`}
 		>
 			<h3

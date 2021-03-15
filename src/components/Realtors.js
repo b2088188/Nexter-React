@@ -13,6 +13,9 @@ const Realtors = () => {
 				justify-content: center;
 				grid-gap: 2rem 0;
 				justify-items: center;
+				@media only screen and (max-width: 50em) {
+					grid-column: full-start/full-end;
+				}
 			`}
 		>
 			<h3
@@ -36,6 +39,12 @@ const Realtors = () => {
 						width: 7rem;
 						border-radius: 50%;
 						display: block;
+					}
+					@media only screen and (max-width: 50em) {
+						grid-template: auto / repeat(3, min-content max-content);
+					}
+					@media only screen and (max-width: 37.5em) {
+						grid-template: auto/min-content max-content;
 					}
 				`}
 			>

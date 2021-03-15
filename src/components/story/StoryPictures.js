@@ -16,6 +16,10 @@ const StoryPictures = () => {
 				// 		rgba(var(--color-primary), 0.5)
 				// 	),
 				// 	url(/images/back.jpg);
+				@media only screen and (max-width: 50em) {
+					grid-column: 1/-1;
+					padding: 3rem;
+				}
 			`}
 		>
 			<img
@@ -26,6 +30,10 @@ const StoryPictures = () => {
 					grid-row: 2/6;
 					grid-column: 2/6;
 					box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.1);
+					@media only screen and (max-width: 50em) {
+						grid-row: 1/-1;
+						grid-column: 1/5;
+					}
 				`}
 			/>
 			<img
@@ -37,6 +45,10 @@ const StoryPictures = () => {
 					grid-column: 4/-1;
 					z-index: 1;
 					box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.2);
+					@media only screen and (max-width: 50em) {
+						grid-row: 1/-1;
+						width: 100%;
+					}
 				`}
 			/>
 		</div>

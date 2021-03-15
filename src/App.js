@@ -19,6 +19,20 @@ const App = () => {
                / [sidebar-start] 8rem [sidebar-end full-start] minmax(6rem, 1fr)
                [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end])
                [center-end] minmax(6rem, 1fr) [full-end];
+            @media only screen and (max-width: 62.5em) {
+               grid-template:
+                  6rem 80vh min-content 40vw repeat(3, min-content)
+                  / [ full-start] minmax(6rem, 1fr)
+                  [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end])
+                  [center-end] minmax(6rem, 1fr) [full-end];
+            }
+            @media only screen and (max-width: 50em) {
+               grid-template:
+                  6rem calc(100vh - 6rem)
+                  / [ full-start] minmax(6rem, 1fr)
+                  [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end])
+                  [center-end] minmax(6rem, 1fr) [full-end];
+            }
          `}
       >
          <Sidebar />
