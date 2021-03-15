@@ -5,6 +5,7 @@ import Story from 'components/story/Story';
 import Homes from 'components/Homes';
 import Gallery from 'components/Gallery';
 import Footer from 'components/Footer';
+import Sidebar from 'components/Sidebar';
 
 const App = () => {
    return (
@@ -18,15 +19,7 @@ const App = () => {
                [center-end] minmax(6rem, 1fr) [full-end];
          `}
       >
-         <div
-            css={`
-               background: var(--color-primary);
-               grid-column: sidebar-start / sidebar-end;
-               grid-row: 1/-1;
-            `}
-         >
-            Sidebar
-         </div>
+         <Sidebar />
          <header
             css={`
                background: var(--color-grey-dark-1);
