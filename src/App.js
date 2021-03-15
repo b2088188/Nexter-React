@@ -6,6 +6,7 @@ import Homes from 'components/Homes';
 import Gallery from 'components/Gallery';
 import Footer from 'components/Footer';
 import Sidebar from 'components/Sidebar';
+import Header from 'components/Header';
 
 const App = () => {
    return (
@@ -20,14 +21,7 @@ const App = () => {
          `}
       >
          <Sidebar />
-         <header
-            css={`
-               background: var(--color-grey-dark-1);
-               grid-column: full-start/col-end 6;
-            `}
-         >
-            Header
-         </header>
+         <Header />
          <div
             css={`
                background: var(--color-secondary);
