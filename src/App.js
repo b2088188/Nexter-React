@@ -3,6 +3,7 @@ import styled from 'styled-components/macro';
 import Features from 'components/Features';
 import Story from 'components/story/Story';
 import Homes from 'components/Homes';
+import Gallery from 'components/Gallery';
 
 const App = () => {
    return (
@@ -44,14 +45,7 @@ const App = () => {
          <Features />
          <Story />
          <Homes />
-         <section
-            css={`
-               background: var(--color-grey-dark-1);
-               grid-column: full-start / full-end;
-            `}
-         >
-            Gallery
-         </section>
+         <Gallery />
          <footer
             css={`
                background: var(--color-secondary);
