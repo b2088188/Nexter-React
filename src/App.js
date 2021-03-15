@@ -4,6 +4,7 @@ import Features from 'components/Features';
 import Story from 'components/story/Story';
 import Homes from 'components/Homes';
 import Gallery from 'components/Gallery';
+import Footer from 'components/Footer';
 
 const App = () => {
    return (
@@ -46,14 +47,7 @@ const App = () => {
          <Story />
          <Homes />
          <Gallery />
-         <footer
-            css={`
-               background: var(--color-secondary);
-               grid-column: full-start / full-end;
-            `}
-         >
-            Footer
-         </footer>
+         <Footer />
       </div>
    );
 };
